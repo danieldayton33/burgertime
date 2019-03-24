@@ -7,17 +7,17 @@ const router = express.Router();
 
 router.get("/",(req,res)=>{
     burger.all(function(data){
-        console.log(data);
+        // console.log(data);
        const handleBarObject = {
             burger: data
         }
-        console.log("HBO", handleBarObject);
+        // console.log("HBO", handleBarObject);
         res.render("index", handleBarObject);
     });
 });
 
 router.post("/api/burger", (req, res)=>{
-    console.log(req.body);
+    console.log("REQ.body", req.body);
     const newBurger = req.body.burger_name;
     console.log(newBurger)
     burger.one(newBurger,function(data){

@@ -5,10 +5,21 @@
 #header {
     text-align: center;
 }
-#content-area {
+/* center the page */
+/* #content-area {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 80%;
     text-align: center;
+} */
+li {
+    padding: 10px;
+    /* display: inline-block; */
+}
+.devour {
+    display: inline-block;
+}
+#eaten {
+    color: grey;
 }
